@@ -121,7 +121,15 @@ public class IDKController
 	{
 		boolean isValid = false;
 		
-		
+		try
+		{
+			Double.parseDouble(example);
+			isValid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			System.out.println("Only floating values are allowed for input");
+		}
 		
 		return isValid;
 	}

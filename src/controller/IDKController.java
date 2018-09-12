@@ -97,6 +97,8 @@ public class IDKController
 		anotherInputScanner.close();
 	}
 
+	
+	//--------Catch ERRORS------------
 	public boolean validInt(String example)
 	{
 		boolean isValid = false;

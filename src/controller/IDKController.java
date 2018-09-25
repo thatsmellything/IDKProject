@@ -1,6 +1,8 @@
 package controller;
 
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 //allows for keyboard inputs
 
 public class IDKController
@@ -9,6 +11,7 @@ public class IDKController
 	
 	public void start()
 	{
+		loops();
 		moreInput();
 		
 	//	System.out.println("Standard output for java :D");
@@ -134,5 +137,32 @@ public class IDKController
 		}
 		
 		return isValid;
+	}
+	
+	//You can only use == for ints and booleans
+	
+	
+	
+	//While loops need a predefined variable and that variable must change at some point otherwise it will be infinite
+	// loop an dyou will be a sad boi
+	private void loops()
+	{
+		int count = 0;
+		boolean isDone = false;
+		while (!isDone)
+		{
+			count++;
+			JOptionPane.showMessageDialog(null, "Brother may i have some oats");
+			if(count>10)
+			{
+				isDone=true;
+			}
+		}
+		int ab = 0;
+		while (ab <= 10)
+		{
+			JOptionPane.showMessageDialog(null, ab);
+			ab++;
+		}
 	}
 }
